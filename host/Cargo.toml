@@ -1,0 +1,38 @@
+[package]
+name = "host"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aptos-guests = { path = "../guests" }
+risc0-zkvm = { version = "1.1.2" }
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+serde_json = { version = "1.0", default-features = false, features = ["alloc"] }
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+clap = { version = "4.0", features = ["derive", "env"] }
+aptos-lc-core = {path = "../core", features = ["aptos"]}
+thiserror = "1.0.64"
+tokio = {version = "1.40.0", features = ["full"]}
+getset = "0.1.3"
+bcs = { git = "https://github.com/aptos-labs/bcs.git", rev = "d31fab9d81748e2594be5cd5cdf845786a30562d" }
+anyhow = "1.0.89"
+axum = "0.7.7"
+tracing = "0.1.40"
+hex = "0.4.3"
+env_logger = "0.11.5"
+reqwest = "0.12.5"
+
+[[bench]]
+name = "inclusion"
+harness = false
+
+[[bench]]
+name = "epoch_change"
+harness = false
+
+[[bench]]
+name = "proof_server"
+harness = false
+
+[features]
+cuda = ["risc0-zkvm/cuda"]
