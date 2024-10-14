@@ -27,8 +27,6 @@ struct BenchResults {
     e2e_proving_time: u128,
     inclusion_proof: ProofData,
     epoch_change_proof: ProofData,
-    shard_size: String,
-    shard_batch_size: String,
     rustflags: String,
 }
 
@@ -106,8 +104,6 @@ fn main() -> Result<(), anyhow::Error> {
         e2e_proving_time,
         inclusion_proof,
         epoch_change_proof,
-        shard_size,
-        shard_batch_size,
         rustflags,
     };
 
