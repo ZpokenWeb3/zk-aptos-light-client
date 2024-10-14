@@ -73,7 +73,7 @@ fn main() {
     let prover = default_prover();
     let (receipt, output) = prove_epoch_change(&*prover, &proving_assets.trusted_state, &proving_assets.epoch_change_proof).unwrap();
     assert_eq!(
-        output.validator_verifier_hash,
+        output.prev_epoch_validator_verifier_hash,
         proving_assets.validator_verifier_hash.as_slice()
     );
 
