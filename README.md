@@ -58,3 +58,6 @@ project_name
         └── lib.rs
 ```
 
+## Acknowledgements
+
+This project is a fork of the work done by [Argument Computer Corporation](https://argument.xyz), which implemented a variety of ZK light clients. You can find more of their implementations through [the provided link](https://github.com/argumentcomputer/zk-light-clients). The contributions of numerous organizations reflect the belief that zero-knowledge cryptography is the future, further reinforcing the importance of innovation in this field. They demonstrate that we can enhance the ZK community in blockchain using different approaches.
