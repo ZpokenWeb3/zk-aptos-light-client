@@ -49,7 +49,7 @@ project_name
     ├── inclusion
     │   ├── Cargo.toml
     │   └── src
-    │       └── main.rs             <-- [Inclsion program]
+    │       └── main.rs             <-- [Inclusion program]
     ├── epoch-change
     │   ├── Cargo.toml
     │   └── src
